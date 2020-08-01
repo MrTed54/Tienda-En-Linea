@@ -52,9 +52,9 @@
                     <img src="images/<?php echo $fila["imagen"]?>" alt="<?php echo $fila["modelo"]?>" class="img-fluid"></a>
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="producto.php"><?php echo $fila["modelo"]?></a></h3>
+                    <h3><a class="text-black" href="producto.php"><?php echo $fila["modelo"]?></a></h3>
                     <p class="mb-0"><?php echo $fila["descripcion"]?></p>
-                    <p class="text-primary font-weight-bold">$<?php echo $fila["precioventa"]?></p>
+                    <p class="text-dark font-weight-bold">$<?php echo $fila["precioventa"]?></p>
                   </div>
                 </div>
               </div>
@@ -65,12 +65,12 @@
 
             </div>
             <div class="row" data-aos="fade-up">
-              <div class="col-md-12 text-center">
-                <div class="site-block-27">
+              <div class="col-md-12  text-center">
+                <div class="site-block-27 ">
                   <ul>
                     <li><a href="#">&lt;</a></li>
-                    <li class="active"><span>1</span></li>
-                    <li><a href="#">2</a></li>
+                    <li class="bg-secondary text-white"><span>1</span></li>
+                    <li><a class="" href="#">2</a></li>
                     <li><a href="#">3</a></li>
                     <li><a href="#">4</a></li>
                     <li><a href="#">5</a></li>
