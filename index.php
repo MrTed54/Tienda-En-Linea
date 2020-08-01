@@ -64,22 +64,14 @@
 
 
             </div>
-            <div class="row" data-aos="fade-up">
-              <div class="col-md-12  text-center">
-                <div class="site-block-27 ">
-                  <ul>
-                    <li><a href="#">&lt;</a></li>
-                    <li class="bg-secondary text-white"><span>1</span></li>
-                    <li><a class="" href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
-                    <li><a href="#">7</a></li>
-                    <li><a href="#">&gt;</a></li>
-                  </ul>
-                </div>
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group mr-2" role="group" aria-label="Third group">
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
               </div>
+            
             </div>
           </div>
 

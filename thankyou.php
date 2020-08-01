@@ -1,3 +1,24 @@
+<?php
+session_start();
+include './php/conexion.php';
+if (!isset($_SESSION['carrito'])) {
+  header("Location: ./index.php");
+}
+$arreglo = $_SESSION['carrito'];
+for($i=0; i<count($arreglo); $i++){
+  $conexion -> query('insert')
+}
+
+
+
+
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
