@@ -1,17 +1,26 @@
 <?php
 session_start();
 include './php/conexion.php';
-if (!isset($_SESSION['carrito'])) {
-  header("Location: ./index.php");
-}
+if (!isset($_SESSION['carrito'])) {header("Location: ./index.php");}
 $arreglo = $_SESSION['carrito'];
-for($i=0; i<count($arreglo); $i++){
-  $conexion -> query('insert')
+$total=0;
+for($i=0; $i<count($arreglo);$i++){
+  $total=$total+($arreglo[$i]['Precio'] * $arreglo[$i]['Cantidad']);  
 }
-
-
-
-
+$fecha = date('Y-m-d h:m:s');
+$conexion -> query("insert into ventas(id_usuario,total,fecha) values($i,$total,'$fecha')")or die($conexion->error);
+$id_venta = $conexion -> insert_id;
+for ($i=0; $i < count($arreglo); $i++) { 
+  $conexion -> query("insert into producto_venta (id_venta,id_producto,cantidad,precio,subtotal)
+  values(
+    $id_venta,
+    ".$arreglo[$i]['Id'].",
+    ".$arreglo[$i]['Cantidad'].",
+    ".$arreglo[$i]['Precio'].",
+    ".$arreglo[$i]['Cantidad'] *$arreglo[$i]['Precio'].") 
+    ")or die($conexion -> error);
+  }
+  unset($_SESSION['carrito']);
 
 ?>
 
@@ -50,7 +59,7 @@ for($i=0; i<count($arreglo); $i++){
             <span class="icon-check_circle display-3 text-success"></span>
             <h2 class="display-3 text-black">Gracias Por Su Compra!</h2>
             <p class="lead mb-5">Su orden a sido completada.</p>
-            <p><a href="shop.php" class="btn btn-sm btn-primary">Regresar a la tienda</a></p>
+            <p><a href="index.php" class="btn btn-sm btn-primary">Regresar a la tienda</a></p>
           </div>
         </div>
       </div>

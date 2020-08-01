@@ -43,7 +43,7 @@
           </div>
           <div class="col-md-6">
             <h2 class="text-black"><?php echo $fila[1];?></h2>
-           <p><?php echo $fila[4]?></p>
+           <p>Existente: <?php echo $fila[4]?></p>
             <p><strong class="text-primary h4">$<?php echo $fila[9]?></strong></p>
           
             <div class="mb-5">
