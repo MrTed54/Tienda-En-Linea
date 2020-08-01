@@ -244,12 +244,12 @@ $arreglo = $_SESSION['carrito'];
 
                       <tr>
                         <td> <?php echo $arreglo[$i]['Nombre'];?> </td>
-                        <td>$<?php echo $arreglo[$i]['Precio'];?></td>
+                        <td>$<?php echo number_format($arreglo[$i]['Precio'], 2,'.','') ;?></td>
                       </tr>
                       <?php }?>
                       <tr>
                         <td>Total de la orden</td>
-                        <td>$<?php echo $total;?></td>
+                        <td>$<?php echo number_format($total, 2,'.','');?></td>
                       </tr>
 
 
@@ -287,7 +287,7 @@ $arreglo = $_SESSION['carrito'];
                   </div>
 
                   <div class="form-group">
-                    <button class="btn btn-primary btn-lg py-3 btn-block" onclick="window.location='thankyou.html'">Place Order</button>
+                    <button class="btn btn-primary btn-lg py-3 btn-block" onclick="window.location='thankyou.php'">Place Order</button>
                   </div>
 
                 </div>
