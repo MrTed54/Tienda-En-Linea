@@ -24,10 +24,6 @@ for ($i=0; $i < count($arreglo); $i++) {
 
 ?>
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
