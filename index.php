@@ -48,11 +48,11 @@
               <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                 <div class="block-4 text-center border">
                   <figure class="block-4-image">
-                    <a href="shop-single.php?id=<?php echo $fila["id"]?>">
+                    <a href="producto.php?id=<?php echo $fila["id"]?>">
                     <img src="images/<?php echo $fila["imagen"]?>" alt="<?php echo $fila["modelo"]?>" class="img-fluid"></a>
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="shop-single.php"><?php echo $fila["modelo"]?></a></h3>
+                    <h3><a href="producto.php"><?php echo $fila["modelo"]?></a></h3>
                     <p class="mb-0"><?php echo $fila["descripcion"]?></p>
                     <p class="text-primary font-weight-bold">$<?php echo $fila["precioventa"]?></p>
                   </div>
@@ -87,9 +87,9 @@
             <div class="border p-4 rounded mb-4">
               <h3 class="mb-3 h6 text-uppercase text-black d-block">Categorias</h3>
               <ul class="list-unstyled mb-0">
-                <li class="mb-1"><a href="#" class="d-flex"><span>Acura</span> <span class="text-black ml-auto">(2,220)</span></a></li>
-                <li class="mb-1"><a href="#" class="d-flex"><span>Audi</span> <span class="text-black ml-auto">(2,550)</span></a></li>
-                <li class="mb-1"><a href="#" class="d-flex"><span>Bmw</span> <span class="text-black ml-auto">(2,124)</span></a></li>
+                <li class="mb-1"><a href="acura.php" class="d-flex"><span>Acura</span> <span class="text-black ml-auto">(2,220)</span></a></li>
+                <li class="mb-1"><a href="audi.php" class="d-flex"><span>Audi</span> <span class="text-black ml-auto">(2,550)</span></a></li>
+                <li class="mb-1"><a href="bmw.php" class="d-flex"><span>Bmw</span> <span class="text-black ml-auto">(2,124)</span></a></li>
               </ul>
             </div>
             

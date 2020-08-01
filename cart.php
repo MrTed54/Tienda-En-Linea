@@ -129,7 +129,7 @@
                     <td>
                       <div class="input-group mb-3" style="max-width: 120px;">
                         <div class="input-group-prepend">
-                          <button class="btn btn-outline-primary js-btn-minus btnIncrementar" type="button">&minus;</button>
+                          <button class="btn btn-outline-dark js-btn-minus btnIncrementar" type="button">&minus;</button>
                         </div>
                         <input type="text" class="form-control text-center txtCantidad " 
                         data-precio="<?php echo $arregloCarrito[$i]['Precio'];?>"
@@ -137,13 +137,13 @@
                         value="<?php echo $arregloCarrito[$i]['Cantidad'];?>" 
                         placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
                         <div class="input-group-append">
-                          <button class="btn btn-outline-primary js-btn-plus btnIncrementar" type="button">&plus;</button>
+                          <button class="btn btn-outline-dark js-btn-plus btnIncrementar" type="button">&plus;</button>
                         </div>
                       </div>
                     </td>
                     <td class="cant <?php echo $arregloCarrito[$i]['Id'];?>">
                     <?php echo $arregloCarrito[$i]['Precio']* $arregloCarrito[$i]['Cantidad']?></td>
-                    <td><a href="#" class="btn btn-primary btn-sm btnEliminar" data-id="<?php echo $arregloCarrito[$i]['Id']?>">X</a></td>
+                    <td><a href="#" class="btn btn-dark btn-sm btnEliminar" data-id="<?php echo $arregloCarrito[$i]['Id']?>">X</a></td>
                   </tr>
 
                   <?php } } ?>
@@ -159,10 +159,10 @@
           <div class="col-md-6">
             <div class="row mb-5">
               <div class="col-md-6 mb-3 mb-md-0">
-                <button class="btn btn-primary btn-sm btn-block">Actualizar Carrito</button>
+                <button class="btn btn-dark btn-sm btn-block" onclick="window.location='cart.php'" >Actualizar Carrito</button>
               </div>
               <div class="col-md-6">
-                <button class="btn btn-outline-primary btn-sm btn-block">Continuar con la compra</button>
+                <button class="btn btn-outline-dark btn-sm btn-block" onclick="window.location='checkout.php'">Continuar con la compra</button>
               </div>
             </div>
             <div class="row">
@@ -174,7 +174,7 @@
                 <input type="text" class="form-control py-3" id="coupon" placeholder="Código de descuento">
               </div>
               <div class="col-md-4">
-                <button class="btn btn-primary btn-sm">Aplicar Cupón</button>
+                <button class="btn btn-dark btn-sm">Aplicar Cupón</button>
               </div>
             </div>
           </div>
@@ -205,7 +205,7 @@
 
                 <div class="row">
                   <div class="col-md-12">
-                    <button class="btn btn-primary btn-lg py-3 btn-block" onclick="window.location='checkout.php'">Confirmar Compra</button>
+                    <button class="btn btn-dark btn-lg py-3 btn-block" onclick="window.location='checkout.php'">Confirmar Compra</button>
                   </div>
                 </div>
               </div>
